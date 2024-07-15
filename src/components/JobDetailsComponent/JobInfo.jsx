@@ -1,12 +1,11 @@
 import React from "react";
-import { FaGoogle } from "react-icons/fa";
 import { BiDollar } from "react-icons/bi";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { PiSuitcaseSimpleThin } from "react-icons/pi";
 import { BsFillPersonPlusFill } from "react-icons/bs";
 import moment from "moment";
-import logo from "../../assets/google.png";
+
 
 const JobInfo = ({ job }) => {
   return (

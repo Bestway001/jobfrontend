@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 
 export const GlobalContext = createContext();
 

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { jobs } from "../../data/jobs";
 import JobCard from "../JobCard";
 import Loader from "../Loader";
 import axios from "axios";

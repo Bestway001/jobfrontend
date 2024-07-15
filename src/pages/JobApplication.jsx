@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
 import Layout from "../components/Layout";
 import MyButton from "../components/MyButton";
 import { SuccessModal } from "../components";

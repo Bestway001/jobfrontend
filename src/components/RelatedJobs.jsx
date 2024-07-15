@@ -1,6 +1,5 @@
 import React from "react";
 import JobCard from "./JobCard";
-import { jobs } from "../data/jobs";
 const RelatedJobs = ({ similar }) => {
   return (
     <section className="py-5">

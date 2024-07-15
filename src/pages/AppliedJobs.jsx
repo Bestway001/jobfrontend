@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout";
-import { jobs } from "../data/jobs";
 import UpdateStatusModal from "../components/UpdateStatusModal";
-import Paginate from "../components/Paginate";
 import Loader from "../components/Loader";
 import axios from "axios";
 import Empty from "../components/Empty";
