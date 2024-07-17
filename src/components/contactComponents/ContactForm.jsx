@@ -3,12 +3,15 @@ import MyButton from "../MyButton";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { contactschema } from "../../utils/formValidator";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({
     resolver: yupResolver(contactschema),
   });
@@ -16,12 +19,15 @@ const ContactForm = () => {
   const onSubmit = (data) => {
     console.log(data);
     // Handle form submission
+    toast.success("message sent successfully");
+    reset();
   };
   return (
     <div
       className="bg-info-subtle mx-auto rounded-4"
       style={{ maxWidth: "950px" }}
     >
+      <ToastContainer autoClose={7000} />
       <form className="p-4" onSubmit={handleSubmit(onSubmit)}>
         <div className="d-flex justify-content-between gap-3 flex-column flex-md-row my-2">
           <div className="form-group w-100">
